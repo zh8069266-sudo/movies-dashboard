@@ -78,7 +78,7 @@ st.markdown('<div class="hero"><h1>🎬 Movies Analytics Dashboard</h1><p>Intera
 with st.sidebar:
     st.header("⚙️ Data Source")
     uploaded = st.file_uploader("Upload your data file", type=["csv","db","sqlite","sqlite3"])
-    local_file = Path("SQLite11.csv")
+    local_file = Path("movies_sample.csv")
     if uploaded:
         raw, filename = uploaded.getvalue(), uploaded.name
     elif local_file.exists():
